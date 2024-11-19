@@ -2,10 +2,8 @@
   padding-right:8px;
   padding-left:8px;
 }
-
 .input-wrapper {
   position: relative;
-  max-width:100%;
 }
 
 .input-wrapper img {
@@ -19,7 +17,7 @@
 
 .input-wrapper input {
   width:100%;
-
+  box-sizing: border-box;
   margin-top:10px;
   margin-bottom:10px;
   padding-left: 30px;
