@@ -1,0 +1,124 @@
+.arrow-exit {
+  text-decoration: none;
+  color:black;
+  display:inline-block;
+}
+.exit-box {
+  display:flex;
+  flex-direction:row;
+  align-items: center;
+}
+.arrow-back {
+  font-size:26px;
+  margin-left:10px;
+}
+.resume {
+  font-size:25px;
+  font-weight:bold;
+  padding-left:5px;
+}
+
+/* Account-box */
+.account-box {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.account-image {
+  width:80px;
+  border-radius:40px;
+  /* box-shadow:0px 5px 50px rgba(35, 130, 185, 0.877); */
+  box-shadow:0px 5px 50px #1739D9;
+}
+.name {
+  font-weight:bold;
+  font-size:20px;
+}
+.age {
+  font-weight:bold;
+}
+.status {
+  border:0.1px solid black;
+  border-radius:15px;
+  padding:2px 6px;
+  font-weight:bold;
+  font-size:14px;
+}
+
+/* Job information */
+.job-information-box {
+  margin-top:15px;
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.job-name, .job-experience {
+  border-radius:8px;
+  width:150px;
+  height:35px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-weight:bold;
+}
+.job-name {
+  background: radial-gradient(#279EFFAB,#FFFFFFC9);
+  color:white;
+}
+.job-experience {
+  background: radial-gradient(#A1FF48,#FFFFFF);
+}
+
+/* Best project */
+.information-box {
+  margin-top:15px;
+  background: white;
+  border-radius:20px;
+  margin-right:5px;
+  margin-left:5px;
+  overflow:hidden;
+  box-sizing: border-box;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.2);
+}
+.project-name {
+  font-weight:bold;
+  font-size:25px;
+  margin-left:10px;
+  padding:10px 0px;
+}
+.image {
+  width:100%;
+  border-radius:20px;
+  margin-top:5px;
+  margin-bottom:15px;
+}
+.image-box {
+  position:relative;
+}
+.image-description {
+  width:160px;
+  color:white;
+  font-weight:bold;
+  font-size:16px;
+  position:absolute;
+  bottom:40px;
+  left:20px;
+}
+.self-information {
+  color:#313131;
+  font-size:20px;
+  margin-left: 10px;
+}
+.information, .second-information {
+  padding-top:5px;
+  padding-left:10px;
+  width:95%;
+  word-wrap:break-word;
+  overflow-wrap:break-word;
+}
+.second-information {
+  padding-bottom:20px;
+}
