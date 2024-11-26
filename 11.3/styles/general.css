@@ -7,7 +7,6 @@ html, body {
   padding:0;
   overflow-x: hidden;
   height:3000px;
-  background: #EFEEF4;
 }
 @media (prefers-color-scheme:light) {
   body {

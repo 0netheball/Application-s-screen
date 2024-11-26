@@ -8,91 +8,37 @@
   <link rel="stylesheet" href="styles/general.css">
 </head>
 <body>
-  <nav>
+  <section class="first-section">
     <a class="arrow-exit" href="#">
       <div class="exit-box">
         <div class="arrow-back">&#x2039;</div>
-        <div class="resume">Резюме</div>
+        <div class="resume">Редактирование</div>
       </div>
     </a>
-  </nav>
-  <main>
-    <section>
-      <div class="section">Направление</div>
-      <div class="menu">
-        <div class="menu-item">Видео-креатор</div>
-        <div class="menu-item">Монтажер</div>
-        <div class="menu-item">Рилс-мейкер</div>
-        <div class="menu-item">Фотограф</div>
-        <div class="menu-item">SMM</div>
-      </div>
-    </section>
-    <section>
-      <div class="section job-experience">Опыт работы</div>
-      <div class="experience-container">
-    
-        <div class="slider-container">
-          <input type="range" min="1" max="5" value="3" class="slider" id="experienceSlider">
-          <div class="range-labels">
-            <span>&gt;1</span>
-            <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>&lt;5</span>
-          </div>
+    <div class="sub-section">
+      <div class="profile-image-box">
+        <div class="change-box">
+          <img class="profile-image" src="thumbnails/e6a3a22e5d81b2e84a7366cf47fdc258.png" alt="">
+          <div class="change-image">Изменить</div>
         </div>
-    
-        <div class="current-value" id="currentExperience">3 года</div>
       </div>
-    </section>
-    <section>
-      <div class="section person-status">Статус</div>
-      <div class="status-menu">
-        <div class="status-item">Ищу работу</div>
-        <div class="status-item">Не ищу работу</div>
-        <div class="status-item">Рассматриваю предложение</div>
-        <div class="status-item">Ищу заказ</div>
+      <div class="input-folder">
+        <input type="text" placeholder="Имя">
+        <input type="text" placeholder="Фамилия">
+        <input type="text" placeholder="Город">
+
+        <input id="phone-number" type="text" placeholder="Номер телефона">
+        <input type="text" placeholder="Электронная почта">
       </div>
-    </section>
-    <section>
-      <div class="section person-status">Рассказать о себе</div>
-      <div class="input-box">
-        <input type="text" placeholder="Опыт работы, хобби...">
+      <div class="checkbox">
+        <input id="checkbox" type="checkbox">
+        <label for="checkbox">Отображать контакты другим пользователям</label>
       </div>
-    </section>
-    <div class="save-changes-box">
-      <button class="save-changes">Сохранить</button>
     </div>
-  </main>
-
-
-
-  <script>
-    const menuItems = document.querySelectorAll('.menu-item');
-
-    menuItems.forEach(item => {
-      item.addEventListener('click', () => {
-        item.classList.toggle('selected');
-      });
-    });
-
-
-    //Job-experience
-    const slider = document.getElementById('experienceSlider');
-    const currentExperience = document.getElementById('currentExperience');
-
-    slider.addEventListener('input', () => {
-    const value = slider.value;
-    
-    if (value == 1) {
-    currentExperience.textContent = `${value} год`;
-      } else if (value == 5) {
-        currentExperience.textContent = `${value} лет`;
-      } else {
-        currentExperience.textContent = `${value} года`;
-      }
-    });
-
-  </script>
+  </section>
+  <section class="save-button-changes">
+    <button class="save-button">Сохранить</button>
+  </section>
+  
 </body>
 </html>

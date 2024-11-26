@@ -4,7 +4,7 @@
   display:inline-block;
 
   margin-top:15px;
-  margin-bottom:20px;
+  margin-bottom:50px;
 }
 .exit-box {
   display:flex;
@@ -16,130 +16,39 @@
   margin-left:10px;
 }
 .resume {
-  font-size:25px;
+  color:white;
+  font-size:20px;
   font-weight:bold;
-  padding-left:5px;
+  padding-left:10px;
+}
+
+.first-section {
+  background:radial-gradient(#279EFFAB,#D2D2D200);
 }
 
 
 
-
-
-.section {
-  font-size:16px;
-  font-weight:bold;
-  margin-left:10px;
-  color:#303030;
+.profile-image-box {
+  position:absolute;
+  top:-10px;
+  left:50%;
+  transform: translate(-50%, -30%);
 }
-.menu {
-  border-radius: 10px;
-  overflow: hidden;
-  margin-top:10px;
+.change-box {
+  position:relative;
 }
-
-.menu-item {
-  margin-right:10px;
-  margin-left:10px;
-  margin-bottom:5px;
-
-  padding: 8px;
-  text-align: center;
-  background-color: #eaeaea;
-  font-size: 16px;
-  color: #333;
-  border-bottom: 1px solid #ddd;
-  border-radius:12px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
+.profile-image {
+  width:100px;
+  border-radius: 20px;
 }
-
-.menu-item:last-child {
-  border-bottom: none;
-}
-
-.menu-item:hover {
-  background-color: #ccc;
-}
-
-.menu-item.selected {
-  background-color: #0056ff;
-  color: #fff;
-  font-weight: bold;
-}
-
-
-
-
-
-
-.job-experience {
-  margin-top:10px;
-}
-.experience-container {
-  text-align: center;
-  margin-right:5px;
-  margin-left:5px;
-}
-
-.experience-title {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-.slider-container {
-  position: relative;
-  width: 100%;
-}
-
-.slider {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 10px;
-  background: #ddd;
-  border-radius: 5px;
-  outline: none;
-  margin: 20px 0;
-  transition: background 0.3s;
-}
-
-.slider::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 25px;
-  height: 25px;
-  background: #0056ff;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  transition: background 0.3s;
-}
-
-.slider::-moz-range-thumb {
-  width: 25px;
-  height: 25px;
-  background: #0056ff;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.range-labels {
-  display: flex;
-  justify-content: space-between;
-  margin-top: -15px;
-  font-size: 14px;
-  color: #666;
-}
-
-.current-value {
-  font-size: 16px;
-  color: #333;
-  font-weight: bold;
-  margin-top: 10px;
+.change-image {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -30%);
+  color:white;
+  text-decoration: underline;
+  font-size:10px;
 }
 
 
@@ -148,42 +57,18 @@
 
 
 
+.sub-section {
+  padding-top:70px;
+  background-color:white;
+  border-radius:20px;
 
+  position:relative;
+}
+.input-folder input {
+  margin: 5px 10px;
+  box-sizing:border-box;
+  width:calc(100% - 20px);
 
-.person-status {
-  margin-top:10px;
-  margin-bottom:10px;
-}
-.status-menu {
- margin-left:5px;
- margin-right:5px;
-}
-.status-item {
-  padding:8px;
-  width:200px;
-  margin-bottom:3px;
-
-  border: 2px solid #ddd;
-  border-radius:12px;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-}
-
-.status-item:hover {
-  background-color: #ccc;
-}
-.status-item.selected {
-  background-color: #0056ff;
-  color: #fff;
-  font-weight: bold;
-}
-
-.input-box {
-  margin-left:5px;
-  margin-right:5px;
-}
-.input-box input {
-  width:100%;
   box-sizing: border-box;
   padding-left:5px;
   height: 30px;
@@ -191,19 +76,36 @@
   border-radius: 5px;
   background: #E4E4E4;
 }
-
-
-
-
-.save-changes-box {
-  display:flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  margin-top:40px;
+#phone-number {
+  margin-top:30px;
 }
-.save-changes {
+
+
+.checkbox {
+  display:flex;
+  flex-direction:row;
+  align-content: center;
+  margin-left:10px;
+  margin-top:15px;
+  padding-bottom:20px;
+}
+.checkbox label {
+  font-size:14px;
+  line-height:12px;
+  padding-left:5px;
+}
+#checkbox {
+  width:20px;
+}
+
+
+.save-button-changes {
+  margin-top:20px;
+  display:flex;
+  justify-content: center;
+  align-content: center;
+}
+.save-button {
   width:80vw;
   padding:10px 10px;
   border:0.1px solid grey;
@@ -214,7 +116,7 @@
   font-size: 15px;
   transition:.15s;
 }
-.save-changes:active {
+.save-button:active {
   background-color: #1739D9;
   color:white;
 }
