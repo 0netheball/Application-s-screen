@@ -1,0 +1,140 @@
+.arrow-exit {
+  text-decoration: none;
+  color:black;
+  display:inline-block;
+}
+.arrow-back {
+  font-size:26px;
+  margin-left:10px;
+}
+
+.box {
+  margin-top:10px;
+  display:flex;
+  justify-content: start;
+  padding-left:20px;
+}
+.profile-picture {
+  width:60px;
+  height:60px;
+  border-radius:12px;
+  margin-right:10px;
+  object-fit: cover;
+}
+.first-row {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.name {
+  font-weight:bold;
+  font-size:25px;
+}
+.cogwheel {
+  margin-top:6px;
+}
+.second-row {
+  display:flex;
+  align-items: center;
+}
+.profession {
+  font-size:18px;
+}
+.status {
+  margin-left:2px;
+  border:2px solid black;
+  padding:2px 10px;
+  border-radius:20px;
+}
+
+/* Search work panel */
+.search-work-box {
+  text-decoration: none;
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+
+}
+.search-work-panel {
+  margin-top:15px;
+  margin-right:5px;
+  margin-left:5px;
+  background:radial-gradient(#279EFFAB, #D2D2D200);
+  border-radius:20px;
+  height:100px;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Order panel */
+.order-box {
+  text-decoration: none;
+  color:white;
+  font-size:22px;
+  font-weight:bold;
+}
+.order-panel {
+  margin-right:5px;
+  margin-left:5px;
+  background:radial-gradient(#F127FFAB, #D2D2D200);
+  border-radius:20px;
+  height:50px;
+  position:relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Resume panel */
+.flex-panel {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom:5px;
+}
+
+.relative-box {
+  margin-top:5px;
+  margin-left:5px;
+  background:linear-gradient(#9ee65c, #61b0f0ab);
+  border-radius:20px;
+  height:100px;
+  width:150px;
+  position:relative;
+}
+.pro {
+  background:linear-gradient(#A1FF48, #73737300);
+}
+.absolute-block {
+  font-size: 20px;
+  font-weight:bold;
+  color:white;
+  position:absolute;
+  top:20px;
+  left:10px;
+}
+.pro-block {
+  font-size: 20px;
+  font-weight:bold;
+  color:white;
+  position:absolute;
+  top:40px;
+  left:54px;
+}
+
+.resume-block {
+  font-size:25px;
+  font-weight:bold;
+  color:white;
+  position:absolute;
+  top:60px;
+  left:10px;
+}
+
+
+  
+
+

@@ -1,0 +1,44 @@
+.pre-section {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left:10px;
+  padding-right:10px;
+  margin-top:20px;
+  margin-bottom:10px;
+}
+.portfolio {
+  font-size:24px;
+}
+.video-grid {
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:2px;
+  row-gap: 10px;
+  
+}
+
+.video-preview {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*It's place for video*/
+.image {
+  height:230px;
+  width:155px;
+  object-fit: cover;
+  object-position:right;
+  border-radius: 12px;
+}
+.video-info {
+  font-weight:bold;
+  font-size:12px;
+  padding-left:20px;
+  padding-top:5px;
+  padding-bottom:5px;
+  height:40px;
+}
+

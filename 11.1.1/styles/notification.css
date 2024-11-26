@@ -1,0 +1,36 @@
+.screen-notification {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:45px;
+  background-color: rgba(0,0,0,0.6);
+  z-index: 100;
+
+
+  display:flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+}
+.button-notification {
+  width:80vw;
+  padding:10px 10px;
+  border-radius:20px;
+  border:none;
+  margin-bottom:6px;
+  color:#1739D9;
+  background-color: white;
+  font-size: 15px;
+  transition:.15s;
+}
+.create-project {
+  margin-bottom:10px;
+}
+
+
+
+.button-notification:active {
+  background-color:#1739D9;
+  color:white;
+}

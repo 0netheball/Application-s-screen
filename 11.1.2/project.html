@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>11.1.2</title>
+  <link rel="stylesheet" href="styles/body.css">
+  <link rel="stylesheet" href="styles/general.css">
+</head>
+<body>
+  <main>
+    <section>
+      <a class="arrow-exit" href="#">
+        <div class="exit-box">
+          <div class="arrow-back">&#x2039;</div>
+          <div class="resume">Добавить проект</div>
+        </div>
+      </a>
+    </section>
+    <section>
+      <div class="upload-container" id="uploadContainer">
+        <label for="fileInput" class="custom-upload-button">
+          Загрузить файл
+        </label>
+        <input type="file" id="fileInput" accept="image/*">
+      </div>
+    </section>
+    <section>
+      <div class="input-box">
+        <input class="input" type="text" placeholder="Название">
+        <input type="text" placeholder="Описание">
+      </div>
+    </section>
+    <nav class="save-setup-button">
+      <button class="save-button">Сохранить</button>
+    </nav>
+  </main>
+  
+
+
+
+
+
+  
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const uploadContainer = document.getElementById('uploadContainer');
+
+    fileInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          uploadContainer.innerHTML = '';
+          const img = document.createElement('img');
+          img.src = e.target.result;
+          uploadContainer.appendChild(img);
+        };
+        reader.readAsDataURL(file);
+      }
+    });
+  </script>
+</body>
+</html>
